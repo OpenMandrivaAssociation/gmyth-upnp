@@ -62,9 +62,13 @@ rm -f %{buildroot}/%{_bindir}/test
 %clean
 rm -rf %{buildroot}
 
+%if %mdkversion < 200900
 %post -p /sbin/ldconfig
+%endif
 
+%if %mdkversion < 200900
 %postun -p /sbin/ldconfig
+%endif
 
 %files -n %{libname}
 %{_libdir}/libgmythupnp.so.%{major}*
