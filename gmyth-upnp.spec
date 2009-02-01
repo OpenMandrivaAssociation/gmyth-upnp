@@ -1,6 +1,6 @@
 %define name gmyth-upnp
 %define version 0.7
-%define rel %mkrel 4
+%define rel %mkrel 5
 
 %define major 0
 %define libname %mklibname %{name} %{major}
@@ -31,7 +31,6 @@ This package provides a plugin for autodetecting Myth backends via UPNP
 %package -n %{libname}
 Summary: Library files for MythTV backend detection via UPNP
 Group: System/Libraries
-Requires: %{name} = %{version}-%{release}
 
 %description -n %{libname}
 A plugin for libgmyth to autodetect Myth backends via UPNP
@@ -49,6 +48,7 @@ Development libraries and headers for the GMyth-UPNP library.
 %setup -q -n %{name}
 
 %build
+autoreconf
 %configure
 %make
 
