@@ -10,7 +10,7 @@ Release:	3
 # http://sourceforge.net/tracker/index.php?func=detail&aid=1790620&group_id=177106&atid=879914
 License:	LGPLv2+
 Group:		System/Libraries
-URL:		http://gmyth.sf.net
+URL:		https://gmyth.sf.net
 Source0:	http://download.sourceforge.net/gmyth/%{name}-%{version}.tar.gz
 Patch0:		gmyth-upnp-0.7.1-fix-dso-linkage.patch
 BuildRequires:	pkgconfig(glib-2.0)
