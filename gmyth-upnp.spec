@@ -13,6 +13,11 @@ Group:		System/Libraries
 URL:		https://gmyth.sf.net
 Source0:	http://download.sourceforge.net/gmyth/%{name}-%{version}.tar.gz
 Patch0:		gmyth-upnp-0.7.1-fix-dso-linkage.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gmyth)
 BuildRequires:	pkgconfig(libupnp)
